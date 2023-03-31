@@ -1,0 +1,21 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  min-width: 320px;
+  color: #000;
+  background-color: #fff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  /*  for firefox */
+}
+
+.app::-webkit-scrollbar {
+  /*  for chromium browsers */
+  display: none;
+}
+
+.search-btn button:hover {
+  border-color: #1778F2;
+  color: #1778F2;
+}

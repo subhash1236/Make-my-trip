@@ -1,0 +1,14 @@
+
+.hotels .search {
+  width: 100%;
+  height: auto;
+  padding: 15px 30px;
+  border-top: 2px solid #aaa;
+  border-bottom: 2px solid #aaa;
+  margin-bottom: 15px;
+}
+
+.hotels .available {
+  width: 100%;
+  padding: 20px;
+}

@@ -1,0 +1,8 @@
+.btn-book_ticket {
+    padding: 5px 40px;
+    cursor: pointer;
+}
+.btn-book_ticket:hover{
+    border-color: #1778F2;
+    color: #1778F2;
+}

@@ -1,0 +1,94 @@
+.hotel_info {
+    width: 740px;
+    margin: 20px 100px;
+    border: 2px solid #aaa;
+    position: relative;
+    padding: 10px;
+}
+
+.hotel_info:hover {
+    box-shadow: 0 0 20px -8px black;
+}
+
+.hotel_info table {
+    width: 540px;
+}
+
+.hotel_info tr {
+    text-align: left;
+}
+
+.hotel_info tr th {
+    font-weight: 400;
+}
+
+.hotel_info tr td {
+    padding: 10px 0;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.hotel_info tr td:first-child {
+    font-size: 25px;
+}
+
+.hotel_info .book-ticket {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.message-no_hotel {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:639px) {
+    .hotel_info {
+        width: 100%;
+        margin: 20px 0;
+        border: 1px solid #aaa;
+        padding: 10px 5px;
+    }
+
+
+    .hotel_info table {
+        width: 100%;
+    }
+
+    .hotel_info .book-ticket {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hotel_info tr th {
+        font-size: 12px;
+    }
+
+    .hotel_info tr td {
+        font-size: 15px;
+        padding: 5px 0;
+        font-weight: 700;
+    }
+
+    .hotel_info tr td:first-child {
+        font-size: 16px;
+    }
+
+    .message-no_hotel {
+        height: 20vh;
+
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:949px) {
+    .hotel_info {
+        width: 90%;
+        margin: 20px 40px;
+    }
+
+    .hotel_info table {
+        width: 90%;
+    }
+}

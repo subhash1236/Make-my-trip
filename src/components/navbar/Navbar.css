@@ -1,0 +1,138 @@
+.navbar {
+    width: 100%;
+    height: 70px;
+    padding: 20px;
+    color: #130f40;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .left {
+    width: 70%;
+}
+
+.navbar .right {
+    width: 30%;
+}
+
+.navbar .right ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-menu ul {
+    list-style: none;
+}
+
+ul li .list-item {
+    font-size: 18px;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li .list-item:hover {
+    font-weight: 700;
+}
+
+ul li .btn-login,
+ul li .btn-user,
+ul li .btn-logout {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-logout {
+    color: red;
+    transition: all 0.5s ease;
+}
+
+.user_info {
+    position: relative;
+}
+
+.hide_logout {
+    position: absolute;
+    top: 40px;
+    right: -200px;
+
+}
+
+.show_logout {
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+
+.navbar .right-menu {
+    display: none;
+    position: relative;
+}
+
+.right-menu .menu-lists {
+    padding: 40px;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 3;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.5s ease;
+}
+
+.right-menu .active {
+    right: 0;
+}
+
+.menu-lists .close-icon {
+    background-color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu-lists ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 639px) {
+    .navbar .right {
+        display: none;
+    }
+
+    .navbar .right-menu {
+        display: block;
+    }
+
+    .menu-lists .user_info,
+    .menu-lists .list-item .btn-login {
+        margin: 40px 0;
+    }
+
+    .menu-lists ul li {
+        margin: 10px 0;
+    }
+
+}
+
+@media screen and (min-width:640px) and (max-width:1024px) {
+    .navbar .left {
+        width: 45%;
+    }
+
+    .navbar .right {
+        width: 55%;
+    }
+}
